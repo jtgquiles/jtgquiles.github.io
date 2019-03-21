@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+* {margin:auto;}
+#calendario {
+	border: 4px double #030303;
+	text-align: center;
+	background-color: #058E21;
+	}
+#diasCalendario {
+	border: 1px solid black;
+	border-collapse: separate;
+	border-spacing: 4px;
+	background-color: #FFFFFF;
+    width: 100%;
+	}
+td {
+	width: 60px;
+	height: 85px;
+	}
+#diasCalendario th, #diasCalendario td {
+	font: normal 14pt arial;
+	}
+#diasCalendario th {
+	color: #990099;
+	background-color: #5ecdec;
+	}
+#diasCalendario td {
+	color:#492736;
+	background-color: #9bf5ff;
+	}
+#fechaActual {
+	font: bold 12pt arial;
+	padding: 0.4em;
+	}
+#fechaActual i {
+	cursor:pointer;
+	}
+#fechaActual i:hover {
+	color: blue;
+	text-decoration:underline;
+	}
+#anterior {
+	float: left;
+	width:100px;
+	font: bold 12pt arial;
+	padding: 0.5em 0.1em;
+	cursor:pointer;
+	}
+#posterior {
+	float: right;
+	width: 100px;
+	font: bold 12pt arial;
+	padding: 0.5em 0.1em;
+	cursor: pointer;
+	}
+#anterior:hover {
+	color: blue;
+	text-decoration:underline;
+	}
+#posterior:hover {
+	color: blue;
+	text-decoration:underline;
+	}
+#titulos {
+	font: normal 20pt "arial black";
+	padding: 0.2em;
+	}
+#tanda {
+	color: #00CC00;
+}
+#evento {
+	text-decoration: none;
+}
+#titulo {
+	color: red;
+}
+
+@media (max-width: 480px){
+	#calendario {
+		width: 200%;
+	}
+	td{
+		height: 10em;
+	}
+}
